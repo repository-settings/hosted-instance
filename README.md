@@ -8,9 +8,23 @@ Repository for the hosted instance of the repository-settings app
 
 ## Table of Contents
 
+* [Usage](#usage)
+  * [Hosted GitHub.com App](#hosted-githubcom-app)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
+
+## Usage
+
+### Hosted GitHub.com App
+
+A hosted version of the [repository-settings app](https://github.com/repository-settings/app)
+for use with GitHub.com.
+
+__[Install the app](https://github.com/apps/settings)__ on your repositories or
+entire organization.
+
+[![Powered by Vercel][vercel-badge]][vercel-link]
 
 ## Contributing
 
@@ -51,3 +65,7 @@ npm test # or npm t
 [PRs-link]: https://makeapullrequest.com
 
 [PRs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
+
+[vercel-badge]: https://github.com/repository-settings/app/raw/master/assets/powered-by-vercel.svg
+
+[vercel-link]: https://vercel.com?utm_source=repository-settings&utm_campaign=oss
