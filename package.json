@@ -1,0 +1,31 @@
+{
+  "name": "hosted-instance",
+  "description": "Repository for the hosted instance of the repository-settings app",
+  "license": "ISC",
+  "private": true,
+  "type": "module",
+  "author": "",
+  "repository": "repository-settings/hosted-instance",
+  "bugs": "https://github.com/repository-settings/hosted-instance/issues",
+  "homepage": "https://github.com/repository-settings/hosted-instance#readme",
+  "scripts": {
+    "test": "npm-run-all --print-label --parallel lint:*",
+    "lint:lockfile": "lockfile-lint",
+    "lint:md": "remark . --frail",
+    "lint:peer": "npm ls >/dev/null",
+    "generate:md": "remark . --output",
+    "prepare": "husky"
+  },
+  "packageManager": "npm@11.11.0+sha512.f36811c4aae1fde639527368ae44c571d050006a608d67a191f195a801a52637a312d259186254aa3a3799b05335b7390539cf28656d18f0591a1125ba35f973",
+  "devDependencies": {
+    "commitlint-config-travi": "1.4.59",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "9.1.7",
+    "lockfile-lint": "5.0.0",
+    "npm-run-all2": "8.0.4",
+    "remark-cli": "12.0.1",
+    "remark-preset-lint-travi": "6.0.8",
+    "remark-toc": "9.0.0",
+    "rimraf": "6.1.3"
+  }
+}

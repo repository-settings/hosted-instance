@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "listItemIndent": "one",
+    "emphasis": "_",
+    "strong": "_",
+    "bullet": "*",
+    "incrementListMarker": false
+  },
+  "plugins": [
+    "remark-preset-lint-travi",
+    [
+      "remark-toc",
+      {
+        "tight": true
+      }
+    ]
+  ]
+}
