@@ -10,6 +10,7 @@ Repository for the hosted instance of the repository-settings app
 
 * [Usage](#usage)
   * [Hosted GitHub.com App](#hosted-githubcom-app)
+  * [Configuration](#configuration)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
