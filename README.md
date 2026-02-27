@@ -26,6 +26,13 @@ entire organization.
 
 [![Powered by Vercel][vercel-badge]][vercel-link]
 
+### Configuration
+
+Now that you have the repository settings app installed for your repositories,
+see the documentation about [configuration](https://github.com/repository-settings/app/blob/master/docs/configuration.md)
+for details
+about updating your repository settings through pull-requests.
+
 ## Contributing
 
 <!--contribution-badges start -->
