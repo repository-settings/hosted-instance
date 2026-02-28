@@ -6,11 +6,13 @@ import {After, Before, Then, When} from '@cucumber/cucumber';
 Before(function () {
   process.env.APP_ID = 12345;
   process.env.PRIVATE_KEY = '-----BEGIN RSA PRIVATE KEY-----\ntest-key\n-----END RSA PRIVATE KEY-----';
+  process.env.SENTRY_DSN = 'https://sentry.io/12345';
 });
 
 After(function () {
   delete process.env.APP_ID;
   delete process.env.PRIVATE_KEY;
+  delete process.env.SENTRY_DSN;
 });
 
 When('the instance is started', async function () {
