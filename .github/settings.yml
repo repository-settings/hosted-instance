@@ -50,6 +50,6 @@ rulesets:
           require_code_owner_review: true
     bypass_actors:
       - actor_id: 10736722
-        actor_type: Integration
+        actor_type: Team
         bypass_mode: always
 
