@@ -32,7 +32,7 @@ rulesets:
             - context: workflow-result
               integration_id: 15368
     bypass_actors:
-      - actor_id: 10736722
+      - actor_id: 10736722        # Owners Team
         actor_type: Team
         bypass_mode: always
   - name: changes must be reviewed
@@ -52,7 +52,9 @@ rulesets:
           require_last_push_approval: true
           required_review_thread_resolution: false
     bypass_actors:
-      - actor_id: 10736722
+      - actor_id: 10736722        # Owners Team
         actor_type: Team
         bypass_mode: always
-
+      - actor_id: 2740            # Renovate App
+        actor_type: Integration
+        bypass_mode: bypass_mode
