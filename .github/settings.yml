@@ -1,0 +1,55 @@
+repository:
+  name: hosted-instance
+  homepage: https://github.com/apps/settings
+  description: Repository for the hosted instance of the repository-settings app
+  allow_auto_merge: true
+  delete_branch_on_merge: true
+rulesets:
+  - name: prevent destruction of the default branch
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - ~DEFAULT_BRANCH
+        exclude: [ ]
+    rules:
+      - type: deletion
+      - type: non_fast_forward
+  - name: verification must pass
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - ~DEFAULT_BRANCH
+        exclude: [ ]
+    rules:
+      - type: required_status_checks
+        parameters:
+          strict_required_status_checks_policy: false
+          required_status_checks:
+            - context: workflow-result
+              integration_id: 15368
+    bypass_actors:
+      - actor_id: 10736722
+        actor_type: Team
+        bypass_mode: always
+  - name: changes must be reviewed
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - "~DEFAULT_BRANCH"
+        exclude: [ ]
+    rules:
+      - type: pull_request
+        parameters:
+          required_approving_review_count: 1
+          require_code_owner_review: true
+    bypass_actors:
+      - actor_id: 10736722
+        actor_type: Integration
+        bypass_mode: always
+
