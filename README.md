@@ -4,6 +4,8 @@ Repository for the hosted instance of the repository-settings app
 
 <!--status-badges start -->
 
+[![Node CI Workflow Status][github-actions-ci-badge]][github-actions-ci-link]
+
 <!--status-badges end -->
 
 ## Table of Contents
@@ -77,3 +79,7 @@ npm test # or npm t
 [vercel-badge]: https://github.com/repository-settings/app/raw/master/assets/powered-by-vercel.svg
 
 [vercel-link]: https://vercel.com?utm_source=repository-settings&utm_campaign=oss
+
+[github-actions-ci-link]: https://github.com/repository-settings/hosted-instance/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
+
+[github-actions-ci-badge]: https://img.shields.io/github/actions/workflow/status/repository-settings/hosted-instance/node-ci.yml.svg?branch=master&logo=github

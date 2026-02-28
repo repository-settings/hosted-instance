@@ -1,0 +1,41 @@
+name: Node.js CI
+'on':
+  push:
+    branches:
+      - master
+      - renovate/**
+  pull_request:
+    types:
+      - opened
+      - synchronize
+env:
+  FORCE_COLOR: 1
+  NPM_CONFIG_COLOR: always
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.0.1
+      - name: Setup node
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm clean-install
+      - run: npm install --global corepack@latest
+      - run: corepack npm audit signatures
+      - run: npm test
+  workflow-result:
+    runs-on: ubuntu-latest
+    needs:
+      - verify
+    if: ${{ !cancelled() }}
+    steps:
+      - name: All matrix versions passed
+        if: ${{ !(contains(needs.*.result, 'failure')) }}
+        run: exit 0
+      - name: Some matrix version failed
+        if: ${{ contains(needs.*.result, 'failure') }}
+        run: exit 1
