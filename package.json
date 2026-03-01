@@ -5,13 +5,14 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": "24.x"
+    "node": ">= 24.11"
   },
   "repository": "repository-settings/hosted-instance",
   "bugs": "https://github.com/repository-settings/hosted-instance/issues",
   "homepage": "https://github.com/repository-settings/hosted-instance#readme",
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
+    "lint:engines": "ls-engines",
     "lint:gherkin": "gherkin-lint --config=.gherkin-lintrc.json",
     "lint:lockfile": "lockfile-lint",
     "lint:md": "remark . --frail",
@@ -38,6 +39,7 @@
     "gherkin-lint": "4.2.4",
     "husky": "9.1.7",
     "lockfile-lint": "5.0.0",
+    "ls-engines": "0.10.0",
     "npm-run-all2": "8.0.4",
     "remark-cli": "12.0.1",
     "remark-preset-lint-travi": "6.0.8",
