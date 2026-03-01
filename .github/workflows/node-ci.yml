@@ -51,7 +51,7 @@ jobs:
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
   deploy-production:
     needs: verify
-    if: github.ref_name != 'main' && github.event.repository.fork == false
+    if: github.ref_name == 'main' && github.event.repository.fork == false
     runs-on: ubuntu-latest
     environment: production
     env:
