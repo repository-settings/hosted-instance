@@ -28,6 +28,7 @@ __[Install the app](https://github.com/apps/settings)__ on your repositories or
 entire organization.
 
 [![Powered by Vercel][vercel-badge]][vercel-link]
+[![Sentry for Good][sentry-badge]][sentry-link]
 
 ### Configuration
 
@@ -79,6 +80,10 @@ npm test # or npm t
 [vercel-badge]: https://github.com/repository-settings/app/raw/master/assets/powered-by-vercel.svg
 
 [vercel-link]: https://vercel.com?utm_source=repository-settings&utm_campaign=oss
+
+[sentry-badge]: ./assets/sentry-wordmark-dark-148x44.svg
+
+[sentry-link]: https://sentry.io/for/open-source/
 
 [github-actions-ci-link]: https://github.com/repository-settings/hosted-instance/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
