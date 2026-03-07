@@ -87,4 +87,4 @@ npm test # or npm t
 
 [github-actions-ci-link]: https://github.com/repository-settings/hosted-instance/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
-[github-actions-ci-badge]: https://img.shields.io/github/actions/workflow/status/repository-settings/hosted-instance/node-ci.yml.svg?branch=master&logo=github
+[github-actions-ci-badge]: https://img.shields.io/github/actions/workflow/status/repository-settings/hosted-instance/node-ci.yml.svg?branch=main&logo=github
