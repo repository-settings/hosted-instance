@@ -13,7 +13,7 @@
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
     "lint:engines": "ls-engines",
-    "lint:gherkin": "gherkin-lint --config=.gherkin-lintrc.json",
+    "lint:gherkin": "gplint --config .gplintrc.json",
     "lint:lockfile": "lockfile-lint",
     "lint:md": "remark . --frail",
     "lint:peer": "npm ls >/dev/null",
