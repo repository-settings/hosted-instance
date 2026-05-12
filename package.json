@@ -33,7 +33,7 @@
     "probot": "14.3.2"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "12.8.2",
+    "@cucumber/cucumber": "12.8.3",
     "commitlint-config-travi": "1.4.64",
     "cz-conventional-changelog": "3.3.0",
     "gplint": "2.5.2",
