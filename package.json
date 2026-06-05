@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "12.9.0",
-    "commitlint-config-travi": "1.4.66",
+    "commitlint-config-travi": "1.4.67",
     "cz-conventional-changelog": "3.3.0",
     "gplint": "2.5.2",
     "husky": "9.1.7",
