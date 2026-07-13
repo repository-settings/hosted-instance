@@ -29,7 +29,7 @@
   "packageManager": "npm@12.0.0+sha512.ab3bcf41f35263b968ba233aaefedd2f4862e5eb0118b9f594bc316ddc8be57388b2c5b3a183309fcc6abd68587192faa274e47a7612c6bb4ac6c16b15b505cb",
   "dependencies": {
     "@repository-settings/app": "5.0.12",
-    "@sentry/node": "10.64.0",
+    "@sentry/node": "10.65.0",
     "probot": "14.3.2"
   },
   "devDependencies": {
