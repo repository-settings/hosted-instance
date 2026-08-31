@@ -36,7 +36,7 @@
     "@cucumber/cucumber": "12.9.0",
     "commitlint-config-travi": "1.4.72",
     "cz-conventional-changelog": "3.3.0",
-    "gplint": "2.5.2",
+    "gplint": "2.6.0",
     "husky": "9.1.7",
     "lockfile-lint": "5.0.1",
     "ls-engines": "0.10.1",
