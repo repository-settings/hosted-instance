@@ -30,7 +30,7 @@
   "dependencies": {
     "@repository-settings/app": "5.0.14",
     "@sentry/node": "11.10.0",
-    "probot": "14.3.2"
+    "probot": "14.3.3"
   },
   "devDependencies": {
     "@cucumber/cucumber": "12.9.0",
